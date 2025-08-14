@@ -1,0 +1,103 @@
+// Typography
+body {
+	background: $body-background-color;
+	color: $body-text-color;
+	font: $body-text-weight #{$body-font-size}/#{$body-line-height} $body-font-family;
+	min-width: $body-min-width;
+}
+
+p, ul, ol, dl {
+	margin: $paragraph-margins;
+}
+
+a {
+	@include link-text-decoration($link-text-decoration);
+
+	color: $link-color;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: $headings-font-family;
+	font-weight: $headings-font-weight;
+	margin: 0 0 0.5em;
+	color: $headings-color;
+}
+
+h1 {
+	font-size: $h1-fs-phone;
+	line-height: 1;
+
+	@include media ('>=phone') {
+		font-size: $h1-fs-tablet;
+	}
+
+	@include media ('>=desktop') {
+		font-size: $h1-fs-desktop;
+	}
+}
+
+h2 {
+	font-size: $h2-fs-phone;
+	line-height: 1;
+
+	@include media ('>=phone') {
+		font-size: $h2-fs-tablet;
+	}
+
+	@include media ('>=desktop') {
+		font-size: $h2-fs-desktop;
+	}
+}
+
+h3 {
+	font-size: $h3-fs-phone;
+
+	@include media ('>=phone') {
+		font-size: $h3-fs-tablet;
+	}
+
+	@include media ('>=desktop') {
+		font-size: $h3-fs-desktop;
+	}
+}
+
+h4 {
+	font-size: $h4-fs-phone;
+
+	@include media ('>=phone') {
+		font-size: $h4-fs-tablet;
+	}
+
+	@include media ('>=desktop') {
+		font-size: $h4-fs-desktop;
+	}
+}
+
+h5 {
+	font-size: $h5-fs-phone;
+
+	@include media ('>=phone') {
+		font-size: $h5-fs-tablet;
+	}
+
+	@include media ('>=desktop') {
+		font-size: $h5-fs-desktop;
+	}
+}
+
+h6 {
+	font-size: $h6-fs-phone;
+
+	@include media ('>=phone') {
+		font-size: $h6-fs-tablet;
+	}
+
+	@include media ('>=desktop') {
+		font-size: $h6-fs-desktop;
+	}
+}

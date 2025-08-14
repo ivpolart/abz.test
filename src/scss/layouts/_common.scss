@@ -1,0 +1,281 @@
+section {
+	max-width: 1170px;
+	margin: 0 auto;
+}
+
+.container {
+	max-width: 1250px;
+	padding: 0 16px;
+	width: 100%;
+	margin: 0 auto;
+
+	@include media ('>=tablet') {
+		padding: 0 32px;
+	}
+
+	@include media ('>=desktop') {
+		padding: 0 60px;
+	}
+
+	@include media ('>=widescreen') {
+		padding: 0 40px;
+	}
+}
+
+.logo {
+	display: block;
+	width: 104px;
+}
+
+.btn {
+	@include animate(background color);
+
+	background: $yellow;
+	padding: 8px 14px;
+	display: inline-block;
+	text-align: center;
+	font: 16px/1 $base-font-sans-serif;
+	border: 1px solid $yellow;
+	color: $black;
+	text-decoration: none;
+	border-radius: 80px;
+	
+	@include media ('>=360px') {
+		min-width: 100px;
+	}
+
+	@include media ('>=tablet') {
+		padding: 8px 17px;
+	}
+
+	&:hover {
+		background: $yellow500;
+	}
+
+	&.btn-upload {
+		background: none;
+		border-color: $black;
+		border-radius: 4px 0 0 4px;
+		padding: 10px 14px;
+		min-width: auto;
+		min-height: 54px;
+
+		@include media ('>=tablet') {
+			padding: 15px;
+		}
+
+		&:hover {
+			background: $black;
+			color: $white;
+		}
+	}
+
+	&.btn-disabled {
+		background: $gray500;
+		border-color: $gray500;
+		color: $white;
+	}
+}
+
+#header {
+	background: $white;
+	padding: 13px 0;
+	position: sticky;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 9999;
+	color: $black;
+
+	.header-block {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 0 14px;
+
+		@include media ('>=desktop') {
+			gap: 0 30px;
+		}
+	}
+
+	.logo {
+		display: block;
+	}
+
+	a {
+		text-decoration: none;
+	}
+
+	.btn-block {
+		display: flex;
+		gap: 0 10px;
+	}
+}
+
+.intro-section {
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding: 40px 0 30px;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	color: $white;
+	min-height: 500px;
+
+	@include media ('>360px') {
+		align-items: center;
+	}
+
+	@include media ('>=tablet') {
+		padding: 50px 0;
+	}
+
+	@include media ('>=desktop') {
+		min-height: 650px;
+	}
+
+	&:before {
+		@include size(100%);
+
+		content: '';
+		background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+
+	.container {
+		z-index: 99;
+	}
+
+	.post-block {
+
+		@include media ('>=tablet') {
+			max-width: 390px;
+			margin: 0 auto;
+		}
+	}
+
+	.btn {
+		margin-top: 15px;
+	}
+}
+
+.users-section {
+	padding: 140px 0 90px;
+	max-width: 1250px;
+
+	@include media ('>=tablet') {
+		padding: 140px 0 95px;
+	}
+
+	p {
+		margin: 0;
+	}
+
+	a {
+		display: block;
+		text-decoration: none;
+	}
+
+	a[href^="mailto:"] {
+		white-space: nowrap;
+		text-overflow: ellipsis;
+		overflow: hidden;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+
+	.title-block {
+		text-align: center;
+		margin: 0 0 50px;
+	}
+
+	.grid-container {
+		display: grid;
+		grid-template-columns: repeat(1, minmax(250px, 328px));
+		justify-content: center;
+		gap: 20px;
+
+		@include media ('>=tablet') {
+			grid-template-columns: repeat(2, minmax(250px, 370px));
+			gap: 16px;
+		}
+
+		@include media ('>=desktop') {
+			grid-template-columns: repeat(3, minmax(250px, 370px));
+			gap: 30px;
+		}
+	}
+
+	.card {
+		background: $white;
+		padding: 20px;
+		text-align: center;
+		border-radius: 16px;
+		width: 100%;
+		margin: 0 auto;
+
+		@include media ('>=tablet') {
+			max-width: 370px;
+		}
+	}
+
+	.photo-holder {
+		@include size(70px);
+
+		margin: 0 auto 20px;
+		border-radius: 100%;
+		overflow: hidden;
+	}
+
+	.name-holder {
+		display: block;
+		margin: 0 0 20px;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+		overflow: hidden;
+	}
+
+	.btn-block {
+		margin: 50px 0 0;
+		text-align: center;
+	}
+}
+
+.form-section {
+	padding: 50px 0;
+
+	@include media ('>=tablet') {
+		padding: 50px 0 100px;
+	}
+
+	.title-block {
+		text-align: center;
+		margin: 0 0 50px;
+	}
+
+	form {
+		max-width: 380px;
+		margin: 0 auto;
+	}
+
+	.success-block {
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	.success-msg {
+		font-size: 40px;
+		line-height: 1;
+		margin: 0 0 20px;
+	}
+
+	.btn {
+		display: block;
+		margin: 0 auto;
+	}
+}

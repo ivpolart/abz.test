@@ -1,0 +1,47 @@
+.developers-section {
+  padding: 30px 0;
+}
+.developers-section p {
+  margin: 0;
+}
+.developers-section .container {
+  max-width: 1248px;
+}
+.developers-section .title-block {
+  text-align: center;
+  margin: 0 0 55px;
+}
+.developers-section .grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+}
+.developers-section .card {
+  background: #fff;
+  padding: 20px;
+  text-align: center;
+  border-radius: 16px;
+}
+.developers-section .photo-holder {
+  width: 70px;
+  height: 70px;
+  margin: 0 auto 20px;
+}
+.developers-section .name-holder {
+  display: block;
+  margin: 0 0 20px;
+}
+.developers-section .btn-block {
+  margin: 50px 0;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .developers-section {
+    padding: 50px 0;
+  }
+}
+@media (min-width: 1024px) {
+  .developers-section {
+    padding: 148px 0;
+  }
+}

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+	@@include('components/_head.html',{
+		"title": "Main"
+	})
+<body>
+	@@include('components/_header.html',{})
+	<main id="main">
+		<section class="intro-section" style="background-image: url(../images/bg-01.jpg)">
+			<div class="container">
+				<div class="post-block">
+					<h1>Test assignment for front&#8209;end developer</h1>
+					<p>What defines a good front-end developer is one that has skilled knowledge of HTML, CSS, JS with a vast understanding of User design thinking as they'll be building web interfaces with accessibility in mind. They should also be excited to learn, as the world of Front-End Development keeps evolving.</p>
+					<a class="btn" href="#sign_up">Sign up</a>
+				</div>
+			</div>
+		</section>
+		<section id="users" class="users-section">
+			<div class="container">
+				<div class="title-block">
+					<h2>Working with GET request</h2>
+				</div>
+				<div class="grid-container">
+					<div class="card">
+						<div class="photo-holder">
+							<img src="images/photo-01.png" alt="">
+						</div>
+						<span class="name-holder">Salvador Stewart Flynn Thomas Salva Salve...</span>
+						<p>
+							Leading specialist of the department of cent...<br/>
+							<a href="mailto:frontend_develop@gmail.com">frontend_develop@gmail.com</a>
+							<a href="tel:+380982784400">+38 (098) 278 44 24</a>
+						</p>
+					</div>
+					<div class="card">
+						<div class="photo-holder">
+							<img src="images/photo-02.png" alt="">
+						</div>
+						<span class="name-holder">Takamaru Ayako Jurrien</span>
+						<p>
+							Lead Independent Director <br/>
+							<a href="mailto:takamuru@gmail.com">Takamuru@gmail.com</a>
+							<a href="tel:+380982789024">+38 (098) 278 90 24</a>
+						</p>
+					</div>
+					<div class="card">
+						<div class="photo-holder">
+							<img src="images/photo-03.png" alt="">
+						</div>
+						<span class="name-holder">Ilya</span>
+						<p>
+							Co-Founder and CEO<br/>
+							<a href="mailto:ilya_founder@gmail.com">ilya_founder@gmail.com</a>
+							<a href="tel:+380982784424">+38 (098) 278 44 24</a>
+						</p>
+					</div>
+					<div class="card">
+						<div class="photo-holder">
+							<img src="images/photo-04.png" alt="">
+						</div>
+						<span class="name-holder">Alexandre</span>
+						<p>
+							Lead Independent Director<br/>
+							<a href="mailto:alexandr_develop@gmail.com">alexandr_develop@gmail.com</a>
+							<a href="tel:+380981984424">+38 (098) 198 44 24</a>
+						</p>
+					</div>
+					<div class="card">
+						<div class="photo-holder">
+							<img src="images/photo-05.png" alt="">
+						</div>
+						<span class="name-holder">Winny</span>
+						<p>
+							Former Senior Director<br/>
+							<a href="mailto:winny_develop@gmail.com">winny_develop@gmail.com</a>
+							<a href="tel:+380982782288">+38 (098) 278 22 88</a>
+						</p>
+					</div>
+					<div class="card">
+						<div class="photo-holder">
+							<img src="images/photo-06.png" alt="">
+						</div>
+						<span class="name-holder">Simon</span>
+						<p>
+							President of Commerce<br/>
+							<a href="mailto:simon@gmail.com"> simon@gmail.com</a>
+							<a href="tel:+380982784400">+38 (098) 278 44 00</a>
+						</p>
+					</div>
+				</div>
+				<div class="btn-block">
+					<button class="btn btn-more" type="button">Show more</button>
+				</div>
+			</div>
+		</section>
+		<section id="sign_up" class="form-section">
+			<div class="container">
+				<div class="title-block">
+					<h2>Working with POST request</h2>
+				</div>
+				<div class="form-block">
+					<form action="">
+						<fieldset class="field name-field">
+							<input type="text" name="first-name" placeholder="Your name">
+							<label for="text">Your name</label>
+						</fieldset>
+						<fieldset class="field email-field">
+							<input type="email" name="email" placeholder="Email">
+							<label for="email">Email</label>
+						</fieldset>
+						<fieldset class="field phone-field">
+							<input type="tel" name="phone" placeholder="Phone">
+							<label for="tel">Phone</label>
+							<label for="phone">+38 (XXX) XXX - XX - XX</label>
+						</fieldset>
+						<fieldset class="field checkbox-field">
+							<legend>Select your position</legend>
+							<label for="frontend">
+								<input type="checkbox" id="frontend" name="interest" value="frontend" />
+								<span class="checkmark"></span>
+								Frontend developer
+							</label>
+							<label for="backend">
+								<input type="checkbox" id="backend" name="interest" value="backend" />
+								<span class="checkmark"></span>
+								Backend developer
+							</label>
+							<label for="designer">
+								<input type="checkbox" id="designer" name="interest" value="designer" />
+								<span class="checkmark"></span>
+								Designer
+							</label>
+							<label for="qa">
+								<input type="checkbox" id="qa" name="interest" value="qa" />
+								<span class="checkmark"></span>
+								QA
+							</label>
+						</fieldset>
+						<fieldset class="field file-field">
+							<input class="default_doc" type="file" name="document" accept=".pdf, .txt, .png, .jpeg, .zip, .psd, .ai, .docx, .doc" data-type="pdf|txt|png|jpeg|zip|psd|ai|docx|doc">
+							<button class="btn btn-upload" type="button">Upload</button>
+							<input class="file-name" type="text" placeholder="Upload your photo" readonly>
+						</fieldset>
+						<button class="btn btn-disabled">Sign up</button>
+					</form>
+				</div>
+			</div>
+		</section>
+	</main>
+</body>
+</html>

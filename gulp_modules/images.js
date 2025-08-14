@@ -17,9 +17,6 @@ export const images = () => {
 	.pipe(newer(path.build.images))
 	//ImgMin
 	.pipe(
-		imagemin()
-	)
-	.pipe(
 		gulp.dest(path.build.images)
 	)
 	.pipe(

@@ -22,10 +22,6 @@ export const images = () => {
 	.pipe(
 		gulp.dest(path.build.images)
 	)
-	//WebP
-	.pipe(
-		webp()
-	)
 	.pipe(
 		gulp.dest(path.build.images)
 	)
